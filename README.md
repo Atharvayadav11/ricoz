@@ -39,18 +39,17 @@ MONGO_URI=<your_mongodb_connection_string>
 
 
 ## Usage
-1.Start the server:
+- Start the server:
 node index.js
 The server will run on http://localhost:3000.
 
 ## API Endpoints
 The following API endpoints are available:
 
-Users
-1.GET /api/users
+- GET /api/users
 Retrieve all users.
 
-2.POST /api/users
+- POST /api/users
 Create a new user.
 Request Body:
 json
@@ -60,7 +59,7 @@ json
     "age":"20"
 }
 
-3.PUT /api/users/:id
+- PUT /api/users/:id
 Update a user by ID.
 Request Body:
 json
