@@ -38,12 +38,12 @@ Create a .env file in the root directory and add your MongoDB connection string:
 MONGO_URI=<your_mongodb_connection_string>
 
 
-##Usage
+## Usage
 1.Start the server:
 node index.js
 The server will run on http://localhost:3000.
 
-##API Endpoints
+## API Endpoints
 The following API endpoints are available:
 
 Users
