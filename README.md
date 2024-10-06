@@ -1,4 +1,4 @@
-# Node Assignment
+
 
 ## Overview
 This repository contains a Node.js application developed as part of the assignment for Ricoz. The application provides a RESTful API to manage user data, utilizing the MVC (Model-View-Controller) architecture, and connects to a MongoDB database using Mongoose.
@@ -9,7 +9,6 @@ This repository contains a Node.js application developed as part of the assignme
 - [Installation](#installation)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
-
 
 ## Features
 - Create, Read, and Update user data via a RESTful API.
@@ -29,43 +28,55 @@ This repository contains a Node.js application developed as part of the assignme
 1. Clone this repository:
    ```bash
    git clone https://github.com/Atharvayadav11/ricoz.git
-Navigate into the project directory
+   ```
 
-Install the required dependencies:
-npm install
+2. Navigate into the project directory:
+   ```bash
+   cd ricoz
+   ```
 
-Create a .env file in the root directory and add your MongoDB connection string:
-MONGO_URI=<your_mongodb_connection_string>
+3. Install the required dependencies:
+   ```bash
+   npm install
+   ```
 
+4. Create a `.env` file in the root directory and add your MongoDB connection string:
+   ```plaintext
+   MONGO_URI=<your_mongodb_connection_string>
+   ```
 
 ## Usage
 - Start the server:
-node index.js
-The server will run on http://localhost:3000.
+   ```bash
+   node index.js
+   ```
+
+- The server will run on `http://localhost:3000`.
 
 ## API Endpoints
 The following API endpoints are available:
 
-- GET /api/users
-Retrieve all users.
+- **GET** `/api/users`  
+  Retrieve all users.
 
-- POST /api/users
-Create a new user.
-Request Body:
-json
-{
-    "name":"atharva",
-    "email":"atharva@gmail.com",
-    "age":"20"
-}
+- **POST** `/api/users`  
+  Create a new user.  
+  **Request Body**:
+  ```json
+  {
+      "name": "atharva",
+      "email": "atharva@gmail.com",
+      "age": "20"
+  }
+  ```
 
-- PUT /api/users/:id
-Update a user by ID.
-Request Body:
-json
-{
-    "name":"atharvayadav",
-    "email":"atharvayadav@gmail.com",
-    "age":"18"
-}
-
+- **PUT** `/api/users/:id`  
+  Update a user by ID.  
+  **Request Body**:
+  ```json
+  {
+      "name": "atharvayadav",
+      "email": "atharvayadav@gmail.com",
+      "age": "18"
+  }
+  ```
