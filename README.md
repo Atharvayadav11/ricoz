@@ -38,19 +38,19 @@ Create a .env file in the root directory and add your MongoDB connection string:
 MONGO_URI=<your_mongodb_connection_string>
 
 
-Usage
-Start the server:
+##Usage
+1.Start the server:
 node index.js
 The server will run on http://localhost:3000.
 
-API Endpoints
+##API Endpoints
 The following API endpoints are available:
 
 Users
-GET /api/users
+1.GET /api/users
 Retrieve all users.
 
-POST /api/users
+2.POST /api/users
 Create a new user.
 Request Body:
 json
@@ -60,7 +60,7 @@ json
     "age":"20"
 }
 
-PUT /api/users/:id
+3.PUT /api/users/:id
 Update a user by ID.
 Request Body:
 json
